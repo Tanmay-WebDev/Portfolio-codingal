@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.Tanmay {
+  color: black;
+  margin-left: 20px;
+  text-shadow: 1px 1px 2px;
+
+}
+
+.singh {
+  color: rgb(3, 41, 255);
+  text-shadow: 1px 1px 2px;
+}
+.hireme-btn {
+  background-color: rgb(3, 41, 255);
+  color: white;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.4s;
+  font-family: "Montserrat";
+}
+
+.hireme-btn:hover {
+  background-color: rgb(9, 35, 183);
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+  padding: 20px;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+  color: black;
+}
+
+.navbar-toggler:hover {
+  color: #42a5f5;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.designer,
+.intro {
+  color: black;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-close {
+  color: black;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 517px) {
+  .navbar-brand {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  .hireme-btn {
+    color: white;
+    font-size: 10px;
+    padding: 8px 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.4s;
+    font-family: "Montserrat";
+  }
+
+  .navbar-toggler-icon {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar-brand {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  .hireme-btn {
+    color: white;
+    font-size: 8px;
+    padding: 8px 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.4s;
+    font-family: "Montserrat";
+  }
+
+  .navbar-toggler-icon {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    color: rgb(255, 255, 255);
+  }
+}
+
+@media (max-width: 991px) {
+  .sidebar ul.navbar-nav .nav-item .nav-link {
+    color: #d6d7e1;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .sidebar ul.navbar-nav .nav-item .nav-link:hover {
+    color: #ffffff;
+  }
+
+  .sidebar ul.navbar-nav .nav-item .nav-link::after {
+    content: none;
+  }
+
+  .sidebar ul.navbar-nav .nav-item {
+    color: #666777;
+  }
+}
+
+.nav-link {
+  color: rgb(111, 111, 111);
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 50%;
+  background-color: rgb(0, 0, 0);
+  transform: translateX(-50%);
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  border-radius: 20px;
+}
+
+@media (max-width: 991px) {
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 50%;
+    background-color: transparent;
+    transform: translateX(-50%);
+    transition: none;
+  }
+
+  .nav-link:hover::after {
+    width: 0;
+    visibility: hidden;
+  }
+}
+
+.hero {
+  margin-top: 100px; /* Default spacing */
+  padding: 70px;
+  position: relative;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.hero p {
+  font-family: "Poppins";
+  font-size: 18px;
+  color: black;
+}
+
+.hero-h1 {
+  color: rgb(255, 3, 3);
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.hero-hireme-btn {
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.hero-hireme-btn:hover {
+  background-color: rgb(12, 2, 146);
+}
+
+.hero-contactme-btn {
+  border: 2px solid black;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: black;
+  font-size: 16px;
+  transition: 0.3s;
+  margin-left: 10px;
+}
+
+.hero-contactme-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.hero-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+@media (min-width: 992px) {
+  .hero {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .hero-h1,
+  .hero p {
+    text-align: left;
+  }
+
+  .hero-buttons {
+    margin-top: 30px;
+  }
+
+  .hero-hireme-btn,
+  .hero-contactme-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 5px 0;
+  }
+
+  .hero-img img {
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero .hero-h1,
+  .hero p {
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .intro,
+  .hero-h1,
+  .designer {
+    font-size: 22px;
+  }
+
+  .hero-buttons {
+    margin-top: 30px;
+  }
+
+  .hero-hireme-btn,
+  .hero-contactme-btn {
+    font-size: 12px;
+    padding: 8px 16px; /* Smaller buttons for mobile */
+    margin: 5px 0;
+  }
+
+  .hero-img img {
+    margin-top: 30px;
+    border-radius: 15px;
+  }
+}
+
+/* HERO ANIMATION  */
+#hero-p , .hero-h1 , .hero-buttons , .intro, .designer{
+  opacity: 0;
+  animation: fadeInAnimation 1.4s ease-in forwards;
+}
+
+
+@keyframes fadeInAnimation{
+  from {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+
+
+
+/* About Styling */
+
+#about{
+  margin-top: 240px;
+  animation: fadeInAnimation 2.5s ease-in forwards;
+}
+
+
+
+@keyframes fadeInAnimation{
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
+ol{
+  text-decoration: none;
+  
+}
